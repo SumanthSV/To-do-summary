@@ -1,0 +1,179 @@
+body {
+  background-color: rgb(22, 22, 22);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.to-do-list {
+  text-align: center;
+  margin-top: 100px;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.add-button {
+  margin: 10px;
+  background-color: rgb(9, 178, 9);
+}
+
+.add-button:hover {
+  background-color: rgb(2, 156, 2);
+}
+
+.delete-button {
+  background-color: rgb(255, 29, 29);
+}
+
+.delete-button:hover {
+  background-color: rgb(252, 0, 0);
+}
+
+.move-button {
+  background-color: rgb(61, 114, 237);
+}
+
+.move-button:hover {
+  background-color: rgb(13, 65, 185);
+}
+
+.down-button {
+  background-color: rgb(61, 114, 237);
+}
+
+.down-button:hover {
+  background-color: rgb(13, 65, 185);
+}
+
+.edit-button {
+  background-color: rgb(138, 41, 229);
+}
+
+.Summarize{
+  background-color: rgb(229, 135, 41);
+}
+
+input[type="text"] {
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 2px solid rgb(156, 156, 156);
+  border-radius: 5px;
+  color: rgb(60, 59, 59);
+  margin-bottom: 20px;
+  width: 80%;
+  max-width: 400px;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: rgb(232, 232, 232);
+  margin-bottom: 10px;
+  border: 3px solid rgb(111, 111, 111);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  flex: 1;
+  text-align: left;
+}
+
+.delete-button, .move-button, .down-button {
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  button {
+    font-size: 1.5rem;
+    padding: 8px 16px;
+  }
+
+  input[type="text"] {
+    font-size: 1.4rem;
+    width: 100%;
+  }
+
+  li {
+    font-size: 1.8rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .delete-button, .move-button, .down-button, .edit-button {
+    font-size: 1.2rem;
+    padding: 6px 10px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  button {
+    margin-top: 10px ;
+    font-size: 1.2rem;
+    padding: 6px 12px;
+  }
+
+  input[type="text"] {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  li {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+
+  .delete-button, .move-button, .down-button, .summarize{
+    font-size: 1rem;
+    padding: 4px 8px;
+    margin: 0px 10px;
+  }
+  .buttons{
+    display: flex;
+    text-align: center;
+    margin: 0px 70px;
+    margin-top: 10px;
+  }
+}
